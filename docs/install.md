@@ -11,9 +11,10 @@
 ### Linux and macOS Install
 The repo is developed and tested on `Ubuntu 20.04` and `Python 3.9`.
 ```bash
-git clone https://github.com/myshell-ai/MeloTTS.git
+git clone https://github.com/HarryBXie/MeloTTS.git
 cd MeloTTS
 pip install -e .
+pip install gradio --upgrade
 python -m unidic download
 ```
 If you encountered issues in macOS install, try the [Docker Install](#docker-install)
@@ -47,8 +48,7 @@ Then open [http://localhost:8888](http://localhost:8888) in your browser to use 
 The WebUI supports muliple languages and voices. First, follow the installation steps. Then, simply run:
 
 ```bash
-melo-ui
-# Or: python melo/app.py
+python melo/app.py
 ```
 
 ### CLI
